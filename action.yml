@@ -1,28 +1,16 @@
 # See: https://docs.github.com/en/actions/creating-actions
-name: TODO:Action Name
+name: Terraform AutoDocs Action
 author: FreeAgent
-description: TODO:Description
-#  inputs:
-#    foo:
-#      description: Foo level
-#      required: true
-#      default: 23
-#  outputs:
-#    bar:
-#      description: Bar output
+description: Auto generates documentation for terraform modules.
+inputs:
+    directories:
+      description: List of directories containing terraform files.
+      required: true
+    options:
+      description: Optional configuration arguments.
+      required: false
 
 runs:
-  # Pick one of the 3 possible types of action:
-
-  #using: 'composite'
-  #steps:
-  #  - name: Step One
-  #    shell: bash
-  #    run: |
-  #      echo TODO: Step One
-
-  #using: 'node12'
-  #main: main.js
-
-  #using: 'docker'
-  #image: 'Dockerfile'
+  using: 'docker'
+  image: 'Dockerfile'
+  

@@ -1,0 +1,25 @@
+# Config - https://github.com/terraform-docs/terraform-docs/blob/master/docs/user-guide/configuration.md
+formatter: markdown table
+
+header-from: INFO.md
+
+sections:
+  hide: [providers]
+  show: []
+
+sort:
+  enabled: true
+  by: required
+
+settings:
+  anchor: true
+  color: true
+  default: true
+  description: false
+  escape: true
+  html: true
+  indent: 2
+  lockfile: true
+  required: true
+  sensitive: true
+  type: true
