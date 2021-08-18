@@ -13,7 +13,7 @@ do
   echo "Processing ${directory}"
   if test -f "${directory}/INFO.md"; then
     echo "INFO.md exists auto creating docs in README.md" 
-    terraform-docs $options $directory > ${directory}/README.md
+    terraform-docs -c /code/.terraform-docs.yml $options $directory > ${directory}/README.md
     echo "Done"
   else
     echo "No INFO.md file exists. Skipping ${directory}"
