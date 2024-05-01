@@ -4,8 +4,8 @@ formatter: markdown table
 header-from: INFO.md
 
 sections:
-  hide: [providers]
-  show: []
+  hide: []
+  show: [header, requirements, inputs, outputs]
 
 sort:
   enabled: true
